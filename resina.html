@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resina - Moldes Creativos</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img src="Imagenes/6479f5fa-4ab8-42d2-b705-3ccb86389554.png" alt="Moldes Creativos" class="logo-icono">
+            <div class="logo-texto">
+                <span class="logo-nombre">Moldes Creativos</span>
+                <span class="logo-slogan">Moldes de silicona</span>
+            </div>
+        </div>
+
+        <div class="header-sesion">
+            <a href="index.html">← Volver al inicio</a>
+        </div>
+    </header>
+    <div class="contenedor-principal">
+        <aside class="sidebar">
+    <h3 class="sidebar-titulo">Categorías</h3>
+    <nav>
+        <ul class="sidebar-lista">
+
+            <li>
+                <a href="index.html" class="sidebar-link">
+                    <img src="Imagenes/Inicio.png"> Inicio
+                </a>
+            </li>
+
+            <li class="categoria-desplegable">
+                <a href="velas.html" class="sidebar-link">
+                    <img src="Imagenes/Velas.png"> Velas
+                </a>
+                <button class="btn-flecha" onclick="toggleMenu('velas-sub', this)">
+                    <img src="Imagenes/Flecha_Derecha.png" class="icono-flecha" alt="Abrir categoría">
+                </button>
+                <ul id="velas-sub" class="subcategorias">
+                    <li><a href="velas.html#flores">Flores</a></li>
+                    <li><a href="velas.html#fanales">Fanales</a></li>
+                </ul>
+            </li>
+
+            <li class="categoria-desplegable">
+                <a href="yeso.html" class="sidebar-link">
+                    <img src="Imagenes/Yeso.png"> Yeso
+                </a>
+                <button class="btn-flecha" onclick="toggleMenu('yeso-sub', this)">
+                    <img src="Imagenes/Flecha_Derecha.png" class="icono-flecha" alt="Abrir categoría">
+                </button>
+                <ul id="yeso-sub" class="subcategorias">
+                    <li><a href="yeso.html#ositos">Ositos</a></li>
+                    <li><a href="yeso.html#floreros">Floreros</a></li>
+                    <li><a href="yeso.html#macetas">Macetas</a></li>
+                    <li><a href="yeso.html#alhajeros">Alhajeros</a></li>
+                </ul>
+            </li>
+
+            <li class="categoria-desplegable">
+                <a href="jabones.html" class="sidebar-link">
+                    <img src="Imagenes/Jabones.png"> Jabones
+                </a>
+                <button class="btn-flecha" onclick="toggleMenu('jabones-sub', this)">
+                    <img src="Imagenes/Flecha_Derecha.png" class="icono-flecha" alt="Abrir categoría">
+                </button>
+                <ul id="jabones-sub" class="subcategorias">
+                    <li><a href="jabones.html#flores">Flores</a></li>
+                    <li><a href="jabones.html#frutas">Frutas</a></li>
+                </ul>
+            </li>
+
+            <li class="categoria-desplegable">
+                <a href="reposteria.html" class="sidebar-link">
+                    <img src="Imagenes/Reposteria.png"> Repostería
+                </a>
+                <button class="btn-flecha" onclick="toggleMenu('reposteria-sub', this)">
+                    <img src="Imagenes/Flecha_Derecha.png" class="icono-flecha" alt="Abrir categoría">
+                </button>
+                <ul id="reposteria-sub" class="subcategorias">
+                    <li><a href="reposteria.html#tortas">Tortas</a></li>
+                    <li><a href="reposteria.html#muffins">Muffins</a></li>
+                    <li><a href="reposteria.html#chocolates">Chocolates</a></li>
+                </ul>
+            </li>
+
+            <li class="categoria-desplegable">
+                <a href="resina.html" class="sidebar-link activo">
+                    <img src="Imagenes/Resina.png"> Resina
+                </a>
+                <button class="btn-flecha" onclick="toggleMenu('resina-sub', this)">
+                    <img src="Imagenes/Flecha_Derecha.png" class="icono-flecha" alt="Abrir categoría">
+                </button>
+                <ul id="resina-sub" class="subcategorias">
+                    <li><a href="resina.html#llaveros">Llaveros</a></li>
+                    <li><a href="resina.html#letras">Letras</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="sidebar-contacto">
+        <h3 class="sidebar-titulo">Contacto</h3>
+        <p>¿Tenés alguna consulta?</p>
+        <a href="https://wa.me/541158232485" class="btn-contacto" target="_blank">Escribinos</a>
+    </div>
+</aside>
+        <main class="area-productos">
+
+            <section id="resina">
+                <h2 class="seccion-titulo">Resina</h2>
+
+                <div class="grilla-productos">
+
+                    <article class="tarjeta-producto">
+                        <img src="Imagenes/Molde silicona_61.jpg" alt="Molde candado abecedario">
+                        <div class="tarjeta-info">
+                            <h4>Molde candado abecedario</h4>
+                            <p class="material">Material: Silicona</p>
+                            <p class="medidas">17,1cm × 22,6cm</p>
+                            <p class="precio">$5.500</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="Imagenes/Molde silicona_14.jpg" alt="Molde llaves abecedario">
+                        <div class="tarjeta-info">
+                            <h4>Molde llaves abecedario</h4>
+                            <p class="material">Material: Silicona</p>
+                            <p class="medidas">25cm × 15cm</p>
+                            <p class="precio">$8.900</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="Imagenes/Molde silicona_15.jpg" alt="Molde castillo">
+                        <div class="tarjeta-info">
+                            <h4>Molde castillo</h4>
+                            <p class="material">Material: Silicona</p>
+                            <p class="medidas">17,1cm × 22,6cm</p>
+                            <p class="precio">$5.500</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="Imagenes/Molde silicona_1.jpg" alt="Molde frasco flor de loto">
+                        <div class="tarjeta-info">
+                            <h4>Molde frasco flor de loto</h4>
+                            <p class="material">Material: Silicona</p>
+                            <p class="medidas">6cm × 6cm</p>
+                            <p class="precio">$4.500</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="Imagenes/Molde silicona_62.jpg" alt="Molde ajedrez">
+                        <div class="tarjeta-info">
+                            <h4>Molde ajedrez</h4>
+                            <p class="material">Material: Silicona</p>
+                            <p class="medidas">17,1cm × 22,6cm</p>
+                            <p class="precio">$5.500</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="Imagenes/Molde silicona_63.jpg" alt="Molde osito sentado con textura">
+                        <div class="tarjeta-info">
+                            <h4>Molde osito sentado con textura</h4>
+                            <p class="material">Material: Silicona</p>
+                            <p class="medidas">17,1cm × 22,6cm</p>
+                            <p class="precio">$5.500</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="Imagenes/Molde silicona_64.jpg" alt="Molde hebillas x4">
+                        <div class="tarjeta-info">
+                            <h4>Molde hebillas x4</h4>
+                            <p class="material">Material: Silicona</p>
+                            <p class="medidas">17,1cm × 22,6cm</p>
+                            <p class="precio">$5.500</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="Imagenes/Molde silicona_65.jpg" alt="Molde espejo 3D">
+                        <div class="tarjeta-info">
+                            <h4>Molde espejo 3D</h4>
+                            <p class="material">Material: Silicona</p>
+                            <p class="medidas">17,1cm × 22,6cm</p>
+                            <p class="precio">$5.500</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="Imagenes/Molde silicona_66.jpg" alt="Molde llamador de angel">
+                        <div class="tarjeta-info">
+                            <h4>Molde llamador de angel</h4>
+                            <p class="material">Material: Silicona</p>
+                            <p class="medidas">17,1cm × 22,6cm</p>
+                            <p class="precio">$5.500</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="Imagenes/Molde silicona_67.jpg" alt="Molde osito parado 3D">
+                        <div class="tarjeta-info">
+                            <h4>Molde osito parado 3D</h4>
+                            <p class="material">Material: Silicona</p>
+                            <p class="medidas">17,1cm × 22,6cm</p>
+                            <p class="precio">$5.500</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="Imagenes/Molde silicona_68.jpg" alt="Molde lentes + formas">
+                        <div class="tarjeta-info">
+                            <h4>Molde lentes + formas</h4>
+                            <p class="material">Material: Silicona</p>
+                            <p class="medidas">17,1cm × 22,6cm</p>
+                            <p class="precio">$5.500</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="Imagenes/Molde silicona_69.jpg" alt="Molde bandeja cuadrada">
+                        <div class="tarjeta-info">
+                            <h4>Molde bandeja cuadrada</h4>
+                            <p class="material">Material: Silicona</p>
+                            <p class="medidas">17,1cm × 22,6cm</p>
+                            <p class="precio">$5.500</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="Imagenes/Molde silicona_70.jpg" alt="Molde forma hexagonal con textura">
+                        <div class="tarjeta-info">
+                            <h4>Molde forma hexagonal con textura</h4>
+                            <p class="material">Material: Silicona</p>
+                            <p class="medidas">17,1cm × 22,6cm</p>
+                            <p class="precio">$5.500</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="Imagenes/Molde silicona_71.jpg" alt="Molde forma rectangulo con textura">
+                        <div class="tarjeta-info">
+                            <h4>Molde forma rectangulo con textura</h4>
+                            <p class="material">Material: Silicona</p>
+                            <p class="medidas">17,1cm × 22,6cm</p>
+                            <p class="precio">$5.500</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="Imagenes/Molde silicona_70.jpg" alt="Molde forma gota con textura">
+                        <div class="tarjeta-info">
+                            <h4>Molde forma gota con textura</h4>
+                            <p class="material">Material: Silicona</p>
+                            <p class="medidas">17,1cm × 22,6cm</p>
+                            <p class="precio">$5.500</p>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-seccion">
+                <h4>Moldes Creativos</h4>
+                <p>Moldes de silicona de calidad para tus creaciones.</p>
+            </div>
+            <div class="footer-seccion">
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="velas.html">Velas</a></li>
+                    <li><a href="yeso.html">Yeso</a></li>
+                    <li><a href="reposteria.html">Repostería</a></li>
+                    <li><a href="resina.html">Resina</a></li>
+                </ul>
+            </div>
+            <div class="footer-seccion">
+                <h4>Contacto</h4>
+                <p>📍 <a href="https://maps.google.com/?q=Buenos+Aires" target="_blank">Buenos Aires, Argentina</a></p>
+                <p>📞 11 5823-2485</p>
+                <p>
+                    <img src="Imagenes/instagram.png" width="15px">
+                    <a href="https://www.instagram.com/rinconcocina19" target="_blank">@rinconcocina19</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>© 2026 Moldes Creativos — Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
