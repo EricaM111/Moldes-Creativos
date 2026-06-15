@@ -34,3 +34,75 @@ function toggleMenu(id, boton) {
         imagen.src = "../Imagenes/Flecha_Abajo.png";
     }
 }
+
+const lightbox = document.createElement("div");
+lightbox.id = "lightbox";
+
+const imagenAmpliada = document.createElement("img");
+imagenAmpliada.id = "imagen-ampliada";
+
+const botonCerrar = document.createElement("span");
+botonCerrar.id = "cerrar-lightbox";
+botonCerrar.innerHTML = "&times;";
+
+const flechaIzquierda = document.createElement("button");
+flechaIzquierda.innerHTML = "❮";
+flechaIzquierda.id = "flecha-lightbox-izquierda";
+
+const flechaDerecha = document.createElement("button");
+flechaDerecha.innerHTML = "❯";
+flechaDerecha.id = "flecha-lightbox-derecha";
+
+lightbox.appendChild(botonCerrar);
+lightbox.appendChild(flechaIzquierda);
+lightbox.appendChild(imagenAmpliada);
+lightbox.appendChild(flechaDerecha);
+
+document.body.appendChild(lightbox);
+
+const imagenPrincipal = document.getElementById("galeria-principal");
+
+imagenPrincipal.addEventListener("click", () => {
+    imagenAmpliada.src = imagenPrincipal.src;
+    lightbox.style.display = "flex";
+});
+
+botonCerrar.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+
+lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+        lightbox.style.display = "none";
+    }
+});
+
+flechaDerecha.addEventListener("click", (e) => {
+    e.stopPropagation();
+    siguiente();
+    imagenAmpliada.src = imagenPrincipal.src;
+});
+
+flechaIzquierda.addEventListener("click", (e) => {
+    e.stopPropagation();
+    anterior();
+    imagenAmpliada.src = imagenPrincipal.src;
+});
+
+document.addEventListener("keydown", (e) => {
+    if (lightbox.style.display === "flex") {
+        if (e.key === "Escape") {
+            lightbox.style.display = "none";
+        }
+
+        if (e.key === "ArrowRight") {
+            siguiente();
+            imagenAmpliada.src = imagenPrincipal.src;
+        }
+
+        if (e.key === "ArrowLeft") {
+            anterior();
+            imagenAmpliada.src = imagenPrincipal.src;
+        }
+    }
+});
