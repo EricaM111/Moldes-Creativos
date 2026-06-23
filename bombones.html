@@ -27,84 +27,52 @@
         <ul class="sidebar-lista">
 
             <li>
-                <a href="index.html" class="sidebar-link">
-                    <img src="Imagenes/Inicio.png"> Inicio
-                </a>
-            </li>
+        <a href="index.html" class="sidebar-link">
+           <img src="Imagenes/Inicio.png" style="width:32px; height:32px; object-fit:contain; vertical-align:middle; margin-right:6px;"> Inicio
+        </a>
+    </li>
 
-            <li class="categoria-desplegable">
-                <a href="velas.html" class="sidebar-link">
-                    <img src="Imagenes/Velas.png"> Velas
-                </a>
-                <button class="btn-flecha" onclick="toggleMenu('velas-sub', this)">
-                    <img src="Imagenes/Flecha_Derecha.png" class="icono-flecha" alt="Abrir categoría">
-                </button>
-                <ul id="velas-sub" class="subcategorias">
-                    <li><a href="velas.html#flores">Flores</a></li>
-                    <li><a href="velas.html#fanales">Fanales</a></li>
-                </ul>
-            </li>
+    <li>
+      <a href="velas.html" class="sidebar-link">
+          <img src="Imagenes/Velas.png"> Velas
+      </a>
+    </li>
 
-            <li class="categoria-desplegable">
-                <a href="yeso.html" class="sidebar-link">
-                    <img src="Imagenes/Yeso.png"> Yeso
-                </a>
-                <button class="btn-flecha" onclick="toggleMenu('yeso-sub', this)">
-                    <img src="Imagenes/Flecha_Derecha.png" class="icono-flecha" alt="Abrir categoría">
-                </button>
-                <ul id="yeso-sub" class="subcategorias">
-                    <li><a href="yeso.html#ositos">Ositos</a></li>
-                    <li><a href="yeso.html#floreros">Floreros</a></li>
-                    <li><a href="yeso.html#macetas">Macetas</a></li>
-                    <li><a href="yeso.html#alhajeros">Alhajeros</a></li>
-                </ul>
-            </li>
+    <li>
+      <a href="yeso.html" class="sidebar-link">
+         <img src="Imagenes/Yeso.png"> Yeso
+      </a>
+    </li>
 
-            <li class="categoria-desplegable">
-                <a href="jabones.html" class="sidebar-link">
-                    <img src="Imagenes/Jabones.png"> Jabones
-                </a>
-                <button class="btn-flecha" onclick="toggleMenu('jabones-sub', this)">
-                    <img src="Imagenes/Flecha_Derecha.png" class="icono-flecha" alt="Abrir categoría">
-                </button>
-                <ul id="jabones-sub" class="subcategorias">
-                    <li><a href="jabones.html#flores">Flores</a></li>
-                    <li><a href="jabones.html#frutas">Frutas</a></li>
-                </ul>
-            </li>
+    <li>
+      <a href="jabones.html" class="sidebar-link">
+         <img src="Imagenes/Jabones.png"> Jabones
+      </a>
+    </li>
 
-            <li class="categoria-desplegable">
-                <a href="reposteria.html" class="sidebar-link activo">
-                    <img src="Imagenes/Reposteria.png"> Repostería
-                </a>
-                <button class="btn-flecha" onclick="toggleMenu('reposteria-sub', this)">
-                    <img src="Imagenes/Flecha_Derecha.png" class="icono-flecha" alt="Abrir categoría">
-                </button>
-                <ul id="reposteria-sub" class="subcategorias">
-                    <li><a href="reposteria.html#tortas">Tortas</a></li>
-                    <li><a href="reposteria.html#muffins">Muffins</a></li>
-                    <li><a href="reposteria.html#chocolates">Chocolates</a></li>
-                </ul>
-            </li>
+    <li>
+      <a href="resina.html" class="sidebar-link">
+         <img src="Imagenes/Resina.png"> Resina
+      </a>
+    </li>
 
-            <li class="categoria-desplegable">
-                <a href="resina.html" class="sidebar-link">
-                    <img src="Imagenes/Resina.png"> Resina
-                </a>
-                <button class="btn-flecha" onclick="toggleMenu('resina-sub', this)">
-                    <img src="Imagenes/Flecha_Derecha.png" class="icono-flecha" alt="Abrir categoría">
-                </button>
-                <ul id="resina-sub" class="subcategorias">
-                    <li><a href="resina.html#llaveros">Llaveros</a></li>
-                    <li><a href="resina.html#letras">Letras</a></li>
-                </ul>
-            </li>
+    <li>
+      <a href="reposteria.html" class="sidebar-link">
+         <img src="Imagenes/Reposteria.png"> Reposteria
+      </a>
+    </li>
 
-            <li>
-            <a href="insumos.html" class="sidebar-link">
-              <img src="Imagenes/Insumos.png"> Insumos
-            </a>
-            </li>
+    <li>
+      <a href="bombones.html" class="sidebar-link activo">
+         <img src="Imagenes/Bombones.png"> Bombones
+      </a>
+    </li>
+
+    <li>
+    <a href="insumos.html" class="sidebar-link">
+        <img src="Imagenes/Insumos.png"> Insumos
+    </a>
+    </li>
 
         </ul>
     </nav>
@@ -120,8 +88,9 @@
 
             <section id="bombones">
                 <h2 class="seccion-titulo">Bombones</h2>
+                <div class="grilla-productos">
 
-                <article class="tarjeta-producto">
+                    <article class="tarjeta-producto">
                         <a href="Productos/numero-borde.html">
                             <img src="Imagenes/Molde silicona_182.jpeg" alt="Molde números">
                             <div class="tarjeta-info">
@@ -157,17 +126,6 @@
                         </a>
                     </article>
 
-                <div class="grilla-productos">
-                    <article class="tarjeta-producto">
-                        <img src="Imagenes/Moffin.jpeg" alt="Molde Muffin x12">
-                        <div class="tarjeta-info">
-                            <h4>Molde Muffin x12</h4>
-                            <p class="material">Material: Silicona</p>
-                            <p class="medidas">7cm × 4,5cm</p>
-                            <p class="precio">$4.900</p>
-                        </div>
-                    </article>
-
                     <article class="tarjeta-producto">
                         <img src="Imagenes/Molde silicona_12.jpg" alt="Molde abecedario">
                         <div class="tarjeta-info">
@@ -175,96 +133,6 @@
                             <p class="material">Material: Silicona</p>
                             <p class="medidas">20cm × 10cm</p>
                             <p class="precio">$5.500</p>
-                        </div>
-                    </article>
-
-                    <article class="tarjeta-producto">
-                        <img src="Imagenes/Molde silicona_13.jpg" alt="Molde torta desmoltable">
-                        <div class="tarjeta-info">
-                            <h4>Molde torta desmoltable</h4>
-                            <p class="material">Material: Teflon</p>
-                            <p class="medidas">8cm c/u</p>
-                            <p class="precio">$3.700</p>
-                        </div>
-                    </article>
-
-                    <article class="tarjeta-producto">
-                        <img src="Imagenes/Molde silicona_52.jpg" alt="Molde tableta de chocolate x9">
-                        <div class="tarjeta-info">
-                            <h4>Molde tableta de chocolate x9</h4>
-                            <p class="material">Material: Silicona</p>
-                            <p class="medidas">8cm c/u</p>
-                            <p class="precio">$3.700</p>
-                        </div>
-                    </article>
-
-                    <article class="tarjeta-producto">
-                        <img src="Imagenes/Molde silicona_53.jpg" alt="Molde muffin x9">
-                        <div class="tarjeta-info">
-                            <h4>Molde muffin x9</h4>
-                            <p class="material">Material: Silicona</p>
-                            <p class="medidas">8cm c/u</p>
-                            <p class="precio">$3.700</p>
-                        </div>
-                    </article>
-
-                    <article class="tarjeta-producto">
-                        <img src="Imagenes/Molde silicona_54.jpg" alt="Molde rectangulos decorados x6">
-                        <div class="tarjeta-info">
-                            <h4>Molde rectangulos decorados x6</h4>
-                            <p class="material">Material: Silicona</p>
-                            <p class="medidas">8cm c/u</p>
-                            <p class="precio">$3.700</p>
-                        </div>
-                    </article>
-
-                    <article class="tarjeta-producto">
-                        <img src="Imagenes/Molde silicona_55.jpg" alt="Molde cakepop x4">
-                        <div class="tarjeta-info">
-                            <h4>Molde cakepop x4</h4>
-                            <p class="material">Material: Silicona</p>
-                            <p class="medidas">8cm c/u</p>
-                            <p class="precio">$3.700</p>
-                        </div>
-                    </article>
-
-                    <article class="tarjeta-producto">
-                        <img src="Imagenes/Molde silicona_56.jpg" alt="Molde donas x4">
-                        <div class="tarjeta-info">
-                            <h4>Molde donas x4</h4>
-                            <p class="material">Material: Silicona</p>
-                            <p class="medidas">8cm c/u</p>
-                            <p class="precio">$3.700</p>
-                        </div>
-                    </article>
-
-                    <article class="tarjeta-producto">
-                        <img src="Imagenes/Molde silicona_57.jpg" alt="Molde mini donas">
-                        <div class="tarjeta-info">
-                            <h4>Molde mini donas</h4>
-                            <p class="material">Material: Silicona</p>
-                            <p class="medidas">8cm c/u</p>
-                            <p class="precio">$3.700</p>
-                        </div>
-                    </article>
-
-                    <article class="tarjeta-producto">
-                        <img src="Imagenes/Molde silicona_58.jpg" alt="Molde abecedario + formas">
-                        <div class="tarjeta-info">
-                            <h4>Molde abecedario + formas</h4>
-                            <p class="material">Material: Silicona</p>
-                            <p class="medidas">8cm c/u</p>
-                            <p class="precio">$3.700</p>
-                        </div>
-                    </article>
-
-                    <article class="tarjeta-producto">
-                        <img src="Imagenes/Molde silicona_59.jpg" alt="Molde tortitas coronas x6">
-                        <div class="tarjeta-info">
-                            <h4>Molde tortitas coronas x6</h4>
-                            <p class="material">Material: Silicona</p>
-                            <p class="medidas">8cm c/u</p>
-                            <p class="precio">$3.700</p>
                         </div>
                     </article>
 
