@@ -50,6 +50,27 @@ function toggleMenu(id, boton) {
     }
 }
 
+function buscarProductos() {
+    let texto = document.getElementById("buscador").value.toLowerCase();
+    let tarjetas = document.querySelectorAll(".grilla-productos .tarjeta-producto");
+    let encontrados = 0;
+    let sinResultados = document.getElementById("sin-resultados");
+
+    for (let i = 0; i < tarjetas.length; i++) {
+        let nombre = tarjetas[i].querySelector("h4").textContent.toLowerCase();
+        if (nombre.includes(texto)) {
+            tarjetas[i].style.display = "block";
+            encontrados++;
+        } else {
+            tarjetas[i].style.display = "none";
+        }
+    }
+
+    if (sinResultados) {
+        sinResultados.style.display = encontrados == 0 ? "block" : "none";
+    }
+}
+
 if (window.innerWidth <= 768 && !window.location.pathname.endsWith('index.html') && window.location.pathname !== '/') {
     window.scrollTo({
         top: document.querySelector('.area-productos').offsetTop,

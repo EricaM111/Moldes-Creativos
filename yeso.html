@@ -90,7 +90,11 @@
 
             <section id="yeso">
                 <h2 class="seccion-titulo">Yeso</h2>
-
+                <div class="buscador-contenedor">
+                  <img src="Imagenes/Lupa.png" style="width: 20px; height: 20px; object-fit: contain; vertical-align: middle;">
+                  <input type="text" id="buscador" class="buscador-input" placeholder="Buscar molde..." oninput="buscarProductos()">
+                </div>
+                <p class="sin-resultados" id="sin-resultados">No se encontraron productos.</p>
                 <div class="grilla-productos">
 
                     <article class="tarjeta-producto">
@@ -99,7 +103,6 @@
                             <div class="tarjeta-info">
                                 <h4>Molde angelito con corazón</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
                                 <p class="precio">$5.900</p>
                             </div>
                         </a>
@@ -111,7 +114,6 @@
                             <div class="tarjeta-info">
                                 <h4>Molde florero con diseño</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
                                 <p class="precio">$9.500</p>
                             </div>
                         </a>
@@ -123,7 +125,6 @@
                             <div class="tarjeta-info">
                                 <h4>Molde girasol</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
                                 <p class="precio">$4.900</p>
                             </div>
                         </a>
@@ -135,7 +136,6 @@
                             <div class="tarjeta-info">
                                 <h4>Molde caramelera cristal</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
                                 <p class="precio">$10.500</p>
                             </div>
                         </a>
@@ -147,7 +147,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde caramelera con diseño</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$8.500</p>
                             </div>
                         </a>
@@ -159,7 +159,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde maceta forma de flor</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$5.500</p>
                             </div>
                         </a>
@@ -171,7 +171,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde panda x4</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$3.900</p>
                             </div>
                         </a>
@@ -183,7 +183,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde corazón con textura mediano</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$3.500</p>
                             </div>
                         </a>
@@ -195,7 +195,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde osito x6</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$6.500</p>
                             </div>
                         </a>
@@ -207,7 +207,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde nuez y hojas</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$3.500</p>
                             </div>
                         </a>
@@ -219,7 +219,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde abecedario babyshower</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$5.900</p>
                             </div>
                         </a>
@@ -231,7 +231,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde auto de carreras y premio</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$6.500</p>
                             </div>
                         </a>
@@ -243,8 +243,44 @@
                          <div class="tarjeta-info">
                             <h4>Molde maceta nena</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">12cm × 8cm</p>
+
                             <p class="precio">$16.900</p>
+                         </div>
+                        </a>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <a href="Productos/maceta-nena-silenciosa.html">
+                         <img src="Imagenes/Molde silicona_44.jpg" alt="Molde maceta nena silenciosa">
+                         <div class="tarjeta-info">
+                            <h4>Molde maceta nena silenciosa</h4>
+                            <p class="material">Material: Silicona</p>
+
+                            <p class="precio">$9.500</p>
+                         </div>
+                        </a>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <a href="Productos/maceta-nena-tierna.html">
+                         <img src="Imagenes/Molde silicona_44.jpg" alt="Molde maceta nena tierna">
+                         <div class="tarjeta-info">
+                            <h4>Molde maceta nena tierna</h4>
+                            <p class="material">Material: Silicona</p>
+
+                            <p class="precio">$9.500</p>
+                         </div>
+                        </a>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <a href="Productos/maceta-mujer.html">
+                         <img src="Imagenes/Molde silicona_44.jpg" alt="Molde maceta mujer">
+                         <div class="tarjeta-info">
+                            <h4>Molde maceta mujer</h4>
+                            <p class="material">Material: Silicona</p>
+
+                            <p class="precio">$9.500</p>
                          </div>
                         </a>
                     </article>
@@ -255,7 +291,7 @@
                          <div class="tarjeta-info">
                             <h4>Molde maceta girasol</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">10cm × 10cm</p>
+
                             <p class="precio">$7.900</p>
                          </div>
                         </a>
@@ -267,7 +303,7 @@
                          <div class="tarjeta-info">
                             <h4>Molde ramo de rosas</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">9cm × 11cm</p>
+
                             <p class="precio">$8.500</p>
                          </div>
                         </a>
@@ -279,7 +315,7 @@
                          <div class="tarjeta-info">
                             <h4>Molde maceta con rayas</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">9cm × 11cm</p>
+
                             <p class="precio">$6.900</p>
                          </div>
                         </a>
@@ -291,7 +327,7 @@
                          <div class="tarjeta-info">
                             <h4>Molde copa con rayas</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">9cm × 11cm</p>
+
                             <p class="precio">$5.500</p>
                          </div>
                         </a>
@@ -303,7 +339,7 @@
                          <div class="tarjeta-info">
                             <h4>Molde copa lisa</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">9cm × 11cm</p>
+
                             <p class="precio">$5.500</p>
                          </div>
                         </a>
@@ -315,7 +351,7 @@
                          <div class="tarjeta-info">
                             <h4>Molde frasco lapicero</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">9cm × 11cm</p>
+
                             <p class="precio">$4.500</p>
                          </div>
                         </a>
@@ -327,7 +363,7 @@
                          <div class="tarjeta-info">
                             <h4>Molde maceta de venado</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">9cm × 11cm</p>
+
                             <p class="precio">$7.900</p>
                          </div>
                         </a>
@@ -339,32 +375,20 @@
                          <div class="tarjeta-info">
                             <h4>Molde maceta con tapa</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">9cm × 11cm</p>
+
                             <p class="precio">$7.900</p>
                          </div>
                         </a>
                     </article>
 
                     <article class="tarjeta-producto">
-                        <a href="Productos/bandeja-cuadrada-con-moño.html">
+                        <a href="Productos/bandeja-cuadrada-moño.html">
                          <img src="Imagenes/Molde silicona_43.jpg" alt="Molde bandeja cuadrada con moño">
                          <div class="tarjeta-info">
                             <h4>Molde bandeja cuadrada con moño</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">9cm × 11cm</p>
-                            <p class="precio">$8.500</p>
-                         </div>
-                        </a>
-                    </article>
 
-                    <article class="tarjeta-producto">
-                        <a href="Productos/maceta-nena-silenciosa.html">
-                         <img src="Imagenes/Molde silicona_44.jpg" alt="Molde maceta nena silenciosa">
-                         <div class="tarjeta-info">
-                            <h4>Molde maceta nena silenciosa</h4>
-                            <p class="material">Material: Silicona</p>
-                            <p class="medidas">9cm × 11cm</p>
-                            <p class="precio">$9.500</p>
+                            <p class="precio">$8.500</p>
                          </div>
                         </a>
                     </article>
@@ -375,7 +399,7 @@
                          <div class="tarjeta-info">
                             <h4>Molde bandeja caracol</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">9cm × 11cm</p>
+
                             <p class="precio">$8.500</p>
                          </div>
                         </a>
@@ -387,7 +411,7 @@
                          <div class="tarjeta-info">
                             <h4>Molde flor de loto</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">9cm × 11cm</p>
+
                             <p class="precio">$5.500</p>
                          </div>
                         </a>
@@ -399,9 +423,33 @@
                          <div class="tarjeta-info">
                             <h4>Molde bandeja circulo con moño</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">9cm × 11cm</p>
+
                             <p class="precio">$4.900</p>
                          </div>
+                        </a>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <a href="Productos/bandeja-cuadrada-con-moño.html">
+                            <img src="Imagenes/Molde silicona_199.jpeg" alt="Molde bandeja cuadrada con moño">
+                            <div class="tarjeta-info">
+                                <h4>Molde bandeja cuadrada con moño</h4>
+                                <p class="material">Material: Silicona</p>
+
+                                <p class="precio">$4.900</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <a href="Productos/bandeja-rectangular-moño.html">
+                            <img src="Imagenes/Molde silicona_162.jpeg" alt="Molde bandeja rectangular con moño">
+                            <div class="tarjeta-info">
+                                <h4>Molde bandeja rectangular con moño</h4>
+                                <p class="material">Material: Silicona</p>
+
+                                <p class="precio">$9.500</p>
+                            </div>
                         </a>
                     </article>
 
@@ -411,7 +459,7 @@
                          <div class="tarjeta-info">
                             <h4>Molde bandeja ovalada con textura grande</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">9cm × 11cm</p>
+
                             <p class="precio">$8.500</p>
                          </div>
                         </a>
@@ -423,7 +471,7 @@
                          <div class="tarjeta-info">
                             <h4>Molde bandeja ovalada con textura chica</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">9cm × 11cm</p>
+
                             <p class="precio">$6.500</p>
                          </div>
                         </a>
@@ -435,8 +483,20 @@
                             <div class="tarjeta-info">
                                 <h4>Molde bandeja ovalada mariposa</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">9cm × 11cm</p>
+
                                 <p class="precio">$6.500</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <a href="Productos/bandeja-ovalada-mariposa-grande.html">
+                            <img src="Imagenes/Molde silicona_375.jpg" alt="Molde bandeja ovalada mariposa grande">
+                            <div class="tarjeta-info">
+                                <h4>Molde bandeja ovalada mariposa grande</h4>
+                                <p class="material">Material: Silicona</p>
+
+                                <p class="precio">$7.900</p>
                             </div>
                         </a>
                     </article>
@@ -447,20 +507,68 @@
                             <div class="tarjeta-info">
                                 <h4>Molde bandeja ovalada rosa con hoja</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$6.500</p>
                             </div>
                         </a>
                     </article>
 
                     <article class="tarjeta-producto">
+                        <a href="Productos/bandeja-ovalada-rosa-con-hoja-grande.html">
+                            <img src="Imagenes/Molde silicona_383.jpeg" alt="Molde bandeja ovalada rosa con hoja grande">
+                            <div class="tarjeta-info">
+                                <h4>Molde bandeja ovalada rosa con hoja grande</h4>
+                                <p class="material">Material: Silicona</p>
+
+                                <p class="precio">$7.900</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <a href="Productos/bandeja-ovalada-hoja.html">
+                            <img src="Imagenes/Molde silicona_371.jpg" alt="Molde bandeja ovalada hoja">
+                            <div class="tarjeta-info">
+                                <h4>Molde bandeja ovalada hoja</h4>
+                                <p class="material">Material: Silicona</p>
+
+                                <p class="precio">$6.500</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <a href="Productos/bandeja-ovalada-flor2.html">
+                            <img src="Imagenes/Molde silicona_369.jpg" alt="Molde bandeja ovalada dos flores">
+                            <div class="tarjeta-info">
+                                <h4>Molde bandeja ovalada dos flores</h4>
+                                <p class="material">Material: Silicona</p>
+
+                                <p class="precio">$7.900</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="tarjeta-producto">
                         <a href="Productos/bandeja-ovalada-nube-lisa.html">
-                            <img src="Imagenes/Molde silicona_143.jpeg" alt="Molde bandeja nube lisa mediano">
+                            <img src="Imagenes/Molde silicona_143.jpeg" alt="Molde bandeja nube lisa">
                             <div class="tarjeta-info">
                                 <h4>Molde bandeja nube lisa</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$6.500</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <a href="Productos/bandeja-nube-grande.html">
+                            <img src="Imagenes/Molde silicona_206.jpeg" alt="Molde bandeja de nube grande">
+                            <div class="tarjeta-info">
+                                <h4>Molde bandeja de nube grande</h4>
+                                <p class="material">Material: Silicona</p>
+
+                                <p class="precio">$9.500</p>
                             </div>
                         </a>
                     </article>
@@ -471,7 +579,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde portasahumerio con ondas</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$4.500</p>
                             </div>
                         </a>
@@ -483,7 +591,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde florero rayado</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$6.900</p>
                             </div>
                         </a>
@@ -495,7 +603,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde oso con corazón</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$2.900</p>
                             </div>
                         </a>
@@ -507,7 +615,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde taza de corazón </h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$6.500</p>
                             </div>
                         </a>
@@ -519,7 +627,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde frasco con hongo</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$10.500</p>
                             </div>
                         </a>
@@ -531,7 +639,19 @@
                             <div class="tarjeta-info">
                                 <h4>Molde frasco flor de loto</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
+                                <p class="precio">$6.900</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <a href="Productos/frasco-flor-de-loto-largo.html">
+                            <img src="Imagenes/Molde silicona_429.jpeg" alt="Molde frasco flor de loto largo">
+                            <div class="tarjeta-info">
+                                <h4>Molde frasco flor de loto largo</h4>
+                                <p class="material">Material: Silicona</p>
+
                                 <p class="precio">$6.900</p>
                             </div>
                         </a>
@@ -543,7 +663,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde frasco con tapa ondulado</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$9.500</p>
                             </div>
                         </a>
@@ -555,7 +675,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde frasco con tapa rayado</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$11.500</p>
                             </div>
                         </a>
@@ -567,7 +687,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde florero de elefante</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$9.500</p>
                             </div>
                         </a>
@@ -579,7 +699,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde frasco con tapa liso</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$6.500</p>
                             </div>
                         </a>
@@ -591,7 +711,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde cola de sirena y estrella</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$5.500</p>
                             </div>
                         </a>
@@ -603,7 +723,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde florero con ondas</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$5.200</p>
                             </div>
                         </a>
@@ -615,7 +735,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde bandeja ovalada con ondas</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$7.900</p>
                             </div>
                         </a>
@@ -627,7 +747,19 @@
                             <div class="tarjeta-info">
                                 <h4>Molde canastita</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
+                                <p class="precio">$6.500</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <a href="Productos/canastita-corazon.html">
+                            <img src="Imagenes/Molde silicona_4.jpg" alt="Molde canastita corazón">
+                            <div class="tarjeta-info">
+                                <h4>Molde canastita corazón</h4>
+                                <p class="material">Material: Silicona</p>
+
                                 <p class="precio">$6.500</p>
                             </div>
                         </a>
@@ -639,7 +771,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde alhajero huella</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$6.900</p>
                             </div>
                         </a>
@@ -651,7 +783,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde portavela llama de fuego</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$4.900</p>
                             </div>
                         </a>
@@ -663,7 +795,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde mano de fatima x2</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$5.500</p>
                             </div>
                         </a>
@@ -675,20 +807,8 @@
                             <div class="tarjeta-info">
                                 <h4>Molde de pesebre</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
-                                <p class="precio">$12.500</p>
-                            </div>
-                        </a>
-                    </article>
 
-                    <article class="tarjeta-producto">
-                        <a href="Productos/bandeja-rectangular-moño.html">
-                            <img src="Imagenes/Molde silicona_162.jpeg" alt="Molde bandeja rectangular con moño">
-                            <div class="tarjeta-info">
-                                <h4>Molde bandeja rectangular con moño</h4>
-                                <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
-                                <p class="precio">$9.500</p>
+                                <p class="precio">$12.500</p>
                             </div>
                         </a>
                     </article>
@@ -699,7 +819,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde portavela de flor</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$2.900</p>
                             </div>
                         </a>
@@ -711,7 +831,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde portavela x3</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$7.900</p>
                             </div>
                         </a>
@@ -723,7 +843,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde florero bubble pequeño</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$4.900</p>
                             </div>
                         </a>
@@ -735,7 +855,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde oso sentado grande</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$7.500</p>
                             </div>
                         </a>
@@ -747,7 +867,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde de labubu x12</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$5.900</p>
                             </div>
                         </a>
@@ -759,20 +879,8 @@
                             <div class="tarjeta-info">
                                 <h4>Molde capibara x6</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
-                                <p class="precio">$4.800</p>
-                            </div>
-                        </a>
-                    </article>
 
-                    <article class="tarjeta-producto">
-                        <a href="Productos/flor-sakura-3.html">
-                            <img src="Imagenes/Molde silicona_172.jpeg" alt="Molde flor de sakura x3">
-                            <div class="tarjeta-info">
-                                <h4>Molde flor de sakura x3</h4>
-                                <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
-                                <p class="precio">$4.500</p>
+                                <p class="precio">$4.800</p>
                             </div>
                         </a>
                     </article>
@@ -783,7 +891,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde maceta de mar</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$10.500</p>
                             </div>
                         </a>
@@ -795,7 +903,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde alhajero diamante</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$12.500</p>
                             </div>
                         </a>
@@ -807,7 +915,19 @@
                             <div class="tarjeta-info">
                                 <h4>Molde bandeja vintage</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
+                                <p class="precio">$10.500</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <a href="Productos/bandeja-vintage-largo.html">
+                            <img src="Imagenes/Molde silicona_202.jpeg" alt="Molde bandeja vintage largo">
+                            <div class="tarjeta-info">
+                                <h4>Molde bandeja vintage</h4>
+                                <p class="material">Material: Silicona</p>
+
                                 <p class="precio">$10.500</p>
                             </div>
                         </a>
@@ -819,7 +939,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde labubu 3D</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$8.900</p>
                             </div>
                         </a>
@@ -831,7 +951,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde de stitch x4</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$3.500</p>
                             </div>
                         </a>
@@ -843,7 +963,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde florero + vela</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas"> 20cm</p>
+
                                 <p class="precio">$14.500</p>
                             </div>
                         </a>
@@ -855,7 +975,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde números</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$2.900</p>
                             </div>
                         </a>
@@ -867,7 +987,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde transportes</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$2.900</p>
                             </div>
                         </a>
@@ -879,7 +999,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde animalitos varios</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$4.900</p>
                             </div>
                         </a>
@@ -891,7 +1011,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde plato con ondas</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$7.500</p>
                             </div>
                         </a>
@@ -903,7 +1023,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde plato forma de flor</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$8.500</p>
                             </div>
                         </a>
@@ -915,7 +1035,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde bandeja forma de flor</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$3.900</p>
                             </div>
                         </a>
@@ -927,7 +1047,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde bandeja forma de corazón<nav></nav></h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$3.900</p>
                             </div>
                         </a>
@@ -939,7 +1059,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde caracoles marinos</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$3.900</p>
                             </div>
                         </a>
@@ -951,7 +1071,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde bandeja con separador</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$6.900</p>
                             </div>
                         </a>
@@ -959,24 +1079,12 @@
 
                     <article class="tarjeta-producto">
                         <a href="Productos/bandeja-pluma.html">
-                            <img src="Imagenes/Molde silicona_198.jpeg" alt="Molde bandeja forma de pluma">
+                            <img src="Imagenes/Molde silicona_385.jpeg" alt="Molde bandeja forma de pluma">
                             <div class="tarjeta-info">
                                 <h4>Molde bandeja forma de pluma</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
-                                <p class="precio">$7.900</p>
-                            </div>
-                        </a>
-                    </article>
 
-                    <article class="tarjeta-producto">
-                        <a href="Productos/bandeja-cuadrada-moño.html">
-                            <img src="Imagenes/Molde silicona_199.jpeg" alt="Molde bandeja cuadrada con moño">
-                            <div class="tarjeta-info">
-                                <h4>Molde bandeja cuadrada con moño</h4>
-                                <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
-                                <p class="precio">$4.900</p>
+                                <p class="precio">$7.900</p>
                             </div>
                         </a>
                     </article>
@@ -987,7 +1095,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde plato de labios portasahumerio</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$4.900</p>
                             </div>
                         </a>
@@ -999,43 +1107,19 @@
                             <div class="tarjeta-info">
                                 <h4>Molde bandeja luna y estrella</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$7.900</p>
                             </div>
                         </a>
                     </article>
 
                     <article class="tarjeta-producto">
-                        <a href="Productos/bandeja-vintage-largo.html">
-                            <img src="Imagenes/Molde silicona_202.jpeg" alt="Molde bandeja vintage largo">
-                            <div class="tarjeta-info">
-                                <h4>Molde bandeja vintage</h4>
-                                <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
-                                <p class="precio">$10.500</p>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="tarjeta-producto">
-                        <a href="Productos/bandeja-ovalada-hoja.html">
-                            <img src="Imagenes/Molde silicona_203.jpeg" alt="Molde bandeja ovalada hoja">
-                            <div class="tarjeta-info">
-                                <h4>Molde bandeja ovalada hoja</h4>
-                                <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
-                                <p class="precio">$6.500</p>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="tarjeta-producto">
                         <a href="Productos/plato-hexagonal-2">
-                            <img src="Imagenes/Molde silicona_204.jpeg" alt="Molde plato hexxagonal x2">
+                            <img src="Imagenes/Molde silicona_204.jpeg" alt="Molde plato hexagonal x2">
                             <div class="tarjeta-info">
                                 <h4>Molde plato hexagonal</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$5.500</p>
                             </div>
                         </a>
@@ -1047,32 +1131,8 @@
                             <div class="tarjeta-info">
                                 <h4>Molde plato de corazón</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$3.500</p>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="tarjeta-producto">
-                        <a href="Productos/bandeja-nube-grande.html">
-                            <img src="Imagenes/Molde silicona_206.jpeg" alt="Molde bandeja de nube grande">
-                            <div class="tarjeta-info">
-                                <h4>Molde bandeja de nube grande</h4>
-                                <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
-                                <p class="precio">$9.500</p>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="tarjeta-producto">
-                        <a href="Productos/bandeja-ovalada-flor2.html">
-                            <img src="Imagenes/Molde silicona_207.jpeg" alt="Molde bandeja ovalada flor">
-                            <div class="tarjeta-info">
-                                <h4>Molde bandeja ovalada dos flores</h4>
-                                <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
-                                <p class="precio">$7.900</p>
                             </div>
                         </a>
                     </article>

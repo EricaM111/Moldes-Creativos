@@ -87,7 +87,11 @@
 
             <section id="resina">
                 <h2 class="seccion-titulo">Resina</h2>
-
+                <div class="buscador-contenedor">
+                  <img src="Imagenes/Lupa.png" style="width: 20px; height: 20px; object-fit: contain; vertical-align: middle;">
+                  <input type="text" id="buscador" class="buscador-input" placeholder="Buscar molde..." oninput="buscarProductos()">
+                </div>
+                <p class="sin-resultados" id="sin-resultados">No se encontraron productos.</p>
                 <div class="grilla-productos">
 
                     <article class="tarjeta-producto">
@@ -96,7 +100,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde molde cruz x12</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$4.900</p>
                             </div>
                         </a>
@@ -108,7 +112,7 @@
                             <div class="tarjeta-info">
                                 <h4>Molde reloj</h4>
                                 <p class="material">Material: Silicona</p>
-                                <p class="medidas">7cm × 4,5cm</p>
+
                                 <p class="precio">$3.900</p>
                             </div>
                         </a>
@@ -119,7 +123,7 @@
                         <div class="tarjeta-info">
                             <h4>Molde candado abecedario</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">17,1cm × 22,6cm</p>
+
                             <p class="precio">$5.500</p>
                         </div>
                     </article>
@@ -129,7 +133,7 @@
                         <div class="tarjeta-info">
                             <h4>Molde llaves abecedario</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">25cm × 15cm</p>
+
                             <p class="precio">$8.900</p>
                         </div>
                     </article>
@@ -139,7 +143,7 @@
                         <div class="tarjeta-info">
                             <h4>Molde castillo</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">17,1cm × 22,6cm</p>
+
                             <p class="precio">$5.500</p>
                         </div>
                     </article>
@@ -149,7 +153,7 @@
                         <div class="tarjeta-info">
                             <h4>Molde frasco flor de loto</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">6cm × 6cm</p>
+
                             <p class="precio">$4.500</p>
                         </div>
                     </article>
@@ -159,7 +163,7 @@
                         <div class="tarjeta-info">
                             <h4>Molde ajedrez</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">17,1cm × 22,6cm</p>
+
                             <p class="precio">$5.500</p>
                         </div>
                     </article>
@@ -169,7 +173,7 @@
                         <div class="tarjeta-info">
                             <h4>Molde osito sentado con textura</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">17,1cm × 22,6cm</p>
+
                             <p class="precio">$5.500</p>
                         </div>
                     </article>
@@ -179,7 +183,7 @@
                         <div class="tarjeta-info">
                             <h4>Molde hebillas x4</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">17,1cm × 22,6cm</p>
+
                             <p class="precio">$5.500</p>
                         </div>
                     </article>
@@ -189,7 +193,7 @@
                         <div class="tarjeta-info">
                             <h4>Molde espejo 3D</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">17,1cm × 22,6cm</p>
+
                             <p class="precio">$5.500</p>
                         </div>
                     </article>
@@ -199,7 +203,7 @@
                         <div class="tarjeta-info">
                             <h4>Molde llamador de angel</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">17,1cm × 22,6cm</p>
+
                             <p class="precio">$5.500</p>
                         </div>
                     </article>
@@ -209,7 +213,7 @@
                         <div class="tarjeta-info">
                             <h4>Molde osito parado 3D</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">17,1cm × 22,6cm</p>
+
                             <p class="precio">$5.500</p>
                         </div>
                     </article>
@@ -219,7 +223,7 @@
                         <div class="tarjeta-info">
                             <h4>Molde lentes + formas</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">17,1cm × 22,6cm</p>
+
                             <p class="precio">$5.500</p>
                         </div>
                     </article>
@@ -229,7 +233,7 @@
                         <div class="tarjeta-info">
                             <h4>Molde bandeja cuadrada</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">17,1cm × 22,6cm</p>
+
                             <p class="precio">$5.500</p>
                         </div>
                     </article>
@@ -239,7 +243,7 @@
                         <div class="tarjeta-info">
                             <h4>Molde forma hexagonal con textura</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">17,1cm × 22,6cm</p>
+
                             <p class="precio">$5.500</p>
                         </div>
                     </article>
@@ -249,7 +253,7 @@
                         <div class="tarjeta-info">
                             <h4>Molde forma rectangulo con textura</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">17,1cm × 22,6cm</p>
+
                             <p class="precio">$5.500</p>
                         </div>
                     </article>
@@ -259,7 +263,7 @@
                         <div class="tarjeta-info">
                             <h4>Molde forma gota con textura</h4>
                             <p class="material">Material: Silicona</p>
-                            <p class="medidas">17,1cm × 22,6cm</p>
+
                             <p class="precio">$5.500</p>
                         </div>
                     </article>
