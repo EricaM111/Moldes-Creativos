@@ -143,8 +143,10 @@ ul {
 }
 
 .sidebar-link {
-    display: block;
-    padding: 9px 12px;
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 10px;
     border-radius: 8px;
     font-size: 14px;
     color: var(--gris-texto);
@@ -580,11 +582,19 @@ body {
 }
 
 .sidebar-link img {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
     object-fit: contain;
     vertical-align: middle;
     margin-right: 6px;
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar-link img {
+        width: 26px;
+        height: 26px;
+    }
 }
 
 @media screen and (max-width: 768px) {
